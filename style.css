@@ -2,9 +2,9 @@ h1 {
     text-align: center;
 }
 
-
 table, th, td {
     border: 1px solid black;
+    text-align: center;
 }
 
 input {
@@ -12,12 +12,30 @@ input {
 }
 
 main {
-    display: flex;
+    display: inline-grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     display: inline-flex;
+    justify-content: space-between;
+} 
+
+#scorecard {
+    grid-area: 1 / 1 / 5 / 3;
 }
+
+#dice {
+    grid-area: 2 / 4 / 3 / 6;
+}
+
+#roll {
+    grid-area: 4 / 4 / 3 / 4;
+}
+
+
 

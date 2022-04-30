@@ -1,4 +1,5 @@
 //roll function: when clicked it "rolls" the dice on the screen populating random images
+//once rolled dice will "roll", and two new buttons for re-roll or turn over pop up
 //function to select certain dice for re-roll
 //buttons that come up and ask if they want to re roll or end turn
 // - should only be able to re roll twice after original roll 
