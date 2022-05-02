@@ -1,6 +1,6 @@
 let diceface = [1,2,3,4,5,6]
 
-let rollbutton = document.getElementById("roll")
+const rollbutton = document.getElementById("roll")
 
 rollbutton.addEventListener('click', (e)=> {
    let randomIndex = Math.floor(Math.random() * diceface.length);
