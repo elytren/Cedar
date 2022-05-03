@@ -23,7 +23,7 @@ rollbutton.addEventListener('click', (e)=> {
     die4.src = randomRoll4;
     die5.src = randomRoll5;
     //once rolled dice will "roll", and two new buttons for re-roll or turn over pop up
-    //function to select certain dice for re-roll
+    //function to select certain dice for re-roll (make dice images buttons/selections)
     //buttons that come up and ask if they want to re roll or end turn
     // - should only be able to re roll twice after original roll 
     //should only be allowed to have 13 turns before game ends 
