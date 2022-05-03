@@ -1,10 +1,25 @@
+let diceface = ["/images/compass.jpeg","/images/flashlight.jpeg", "/images/hatchet.png", "/images/flask.png", "/images/tent.png", "/images/s'more.png"]
 
 const rollbutton = document.getElementById("roll")
 
+let die1 = document.getElementById('die1');
+let die2 = document.getElementById('die2');
+let die3 = document.getElementById('die3');
+let die4 = document.getElementById('die4');
+let die5 = document.getElementById('die5');
+
+
 rollbutton.addEventListener('click', (e)=> {
-    let randomIndex = diceface[Math.floor(Math.random()* diceface.length)];
-    
-    console.log(randomIndex); 
+    let randomRoll1 = diceface[Math.floor(Math.random()* diceface.length)];
+    let randomRoll2 = diceface[Math.floor(Math.random()* diceface.length)];
+    let randomRoll3 = diceface[Math.floor(Math.random()* diceface.length)];
+    let randomRoll4 = diceface[Math.floor(Math.random()* diceface.length)];
+    let randomRoll5 = diceface[Math.floor(Math.random()* diceface.length)];
+    die1.src = randomRoll1;
+    die2.src = randomRoll2;
+    die3.src = randomRoll3;
+    die4.src = randomRoll4;
+    die5.src = randomRoll5;
 });
 
 
