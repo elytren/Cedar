@@ -1,12 +1,13 @@
-let diceface = [1,2,3,4,5,6]
 
 const rollbutton = document.getElementById("roll")
 
 rollbutton.addEventListener('click', (e)=> {
-   let randomIndex = Math.floor(Math.random() * diceface.length);
-   let randomNum = diceface[randomIndex];
-   return randomNum; 
+    let randomIndex = diceface[Math.floor(Math.random()* diceface.length)];
+    
+    console.log(randomIndex); 
 });
+
+
 
 //roll function: when clicked it "rolls" the dice on the screen populating random images
 //once rolled dice will "roll", and two new buttons for re-roll or turn over pop up
