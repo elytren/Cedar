@@ -18,6 +18,8 @@ let fullPackInput = document.getElementById('fullP')
 let smInput = document.getElementById('smP')
 let lgInput = document.getElementById('lgP')
 let cedarInput = document.getElementById('cedar')
+let lmpInput = document.getElementById('lastMinP')
+
 let lowSecTot = document.getElementById('lowSecTot')
 let grandTot = document.getElementById('granTot')
 
@@ -48,7 +50,23 @@ calc1Button.addEventListener('click', (e)=>{
    
 });
 
+let calc2Button = document.getElementById('calc2')
+let upperSecTot2 = document.getElementById('upTot2')
 
+calc2Button.addEventListener('click', (e)=>{
+    let num1 = threeKindInput.value;
+    let num2 = fourKindInput.value;
+    let num3 = fullPackInput.value;
+    let num4 = smInput.value;
+    let num5 = lgInput.value;
+    let num6 = cedarInput.value;
+    let num7 = lmpInput.value;
+    let result = Number(num1) + Number(num2) + Number(num3) 
+    + Number(num4) + Number(num5) + Number(num6) + Number(num7);
+    
+    lowSecTot.innerHTML = result;
+    grandTot.innerHTML = Number(lowSecTot.innerHTML) + Number(upperSecTot2.innerHTML)
+});
 
 
 
