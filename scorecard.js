@@ -23,8 +23,6 @@ let lmpInput = document.getElementById('lastMinP')
 let lowSecTot = document.getElementById('lowSecTot')
 let grandTot = document.getElementById('granTot')
 
-
-
 let calc1Button = document.getElementById('calc1')
 
 calc1Button.addEventListener('click', (e)=>{
