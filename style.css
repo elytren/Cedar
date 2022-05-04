@@ -37,5 +37,13 @@ img {
     grid-area: 4 / 4 / 3 / 4;
 }
 
+#reRoll {
+    grid-area: 4 / 4 / 3 / 4;
+}
+
+#endTurn {
+    grid-area: 4 / 4 / 3 / 4;
+}
+
 
 
