@@ -27,51 +27,10 @@ rollbutton.addEventListener('click', (e)=> {
     //buttons that come up and ask if they want to re roll or end turn
     // - should only be able to re roll twice after original roll 
     //should only be allowed to have 13 turns before game ends 
-
-
 });
 
 
-//numbers inputed into upper section should auto populate a total for upper total score, auto puts number in lower upper section
-//lower section auto populate total score
-//grand total score calculates lower and upper combined 
-let compassInput = document.getElementById('compasses').value;
-let flashlightInput = document.getElementById('flashlights').value;
-let hatchetInput = document.getElementById('hatchets').value;
-let flasksInput = document.getElementById('flasks').value;
-let tentsInput = document.getElementById('tents').value;
-let smoresInput = document.getElementById('smores').value;
 
-let totalScore1 = document.getElementById('totScor')
-let bonusPoints = document.getElementById('bonScor')
-let upperSecTot = document.getElementsByClassName('upTot')
-
-let threeKindInput = document.getElementById('3kind')
-let fourKindInput = document.getElementById('4kind')
-let fullPackInput = document.getElementById('fullP')
-let smInput = document.getElementById('smP')
-let lgInput = document.getElementById('lgP')
-let cedarInput = document.getElementById('cedar')
-let lowSecTot = document.getElementById('lowSecTot')
-let grandTot = document.getElementById('granTot')
-
-let calc1Button = document.getElementById('calc1')
-
-calc1Button.addEventListener('click', (e)=>{
-    let sum = (compassInput + flashlightInput + hatchetInput + flasksInput + tentsInput + smoresInput)
-    totalScore1.innerText = sum
-    console.log(sum)
-});
-
-
-//function to check for bonus score
-
-// bonusSection(){
-    
-// }
-
-
-//show ending score on page
 
 
 
