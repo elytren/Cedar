@@ -1,14 +1,35 @@
+html {
+    background-color: ;
+}
+
 h1 {
     text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 65px;
+    color:#4d3e39
+    
+}
+
+table {
+    /* background-color: #4d3e39; */
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th, td, input {
+    /* background-color: palegoldenrod; */
+    
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: .5px solid #70bdfa;
     text-align: center;
 }
 
 input {
     border: none;
+    /* cursor: url('images/pencil-cursor.png'); */
+    
 }
 
 main {
@@ -21,8 +42,8 @@ main {
 img {
     width: 75px;
     height: 75px;
-    display: inline-flex;
     justify-content: space-between;
+    border-radius: 25px;
 } 
 
 #scorecard {
@@ -35,6 +56,7 @@ img {
 
 #roll {
     grid-area: 3 / 4 / 4 / 6;
+    border-radius: 25px;
 }
 
 #reRoll {
