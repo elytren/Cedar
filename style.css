@@ -34,15 +34,15 @@ img {
 }
 
 #roll {
-    grid-area: 4 / 4 / 3 / 4;
+    grid-area: 3 / 4 / 4 / 6;
 }
 
 #reRoll {
-    grid-area: 4 / 4 / 3 / 4;
+    grid-area: 3 / 4 / 4 / 5;
 }
 
-#endTurn {
-    grid-area: 4 / 4 / 3 / 4;
+#endTurnBut {
+    grid-area: 3 / 5 / 4 / 6;
 }
 
 
