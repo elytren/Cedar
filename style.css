@@ -1,5 +1,6 @@
 html {
-    background-color: url("/images/forest\ background.jpeg");
+    background: url("/images/cedar-branch.jpeg");
+    background-size: cover;
 }
 body{
     width: 100vw;
@@ -14,6 +15,7 @@ header {
 h1{
     margin:auto;
     padding: 0;
+    color: white;
 }
 main {
     display: inline-grid;
@@ -21,13 +23,18 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
 }
+th, td {
+    border: .5px solid #70bdfa;
+    text-align: center;
+}
 
 #scorecard {
     grid-area: 1 / 1 / 5 / 3;
     margin: 0px 75px 0px 100px;
     border-radius: 8px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: wrap;
+    background-color: white;
+    border: .5px solid #70bdfa;
 }
 
 #dice {
@@ -53,16 +60,6 @@ main {
     border-radius: 25px;
     width: 250px;
     height: 100px;
-}
-
-th, td, input {
-    background-color: white;
-    
-}
-
-table, th, td {
-    border: .5px solid #70bdfa;
-    text-align: center;
 }
 
 input {

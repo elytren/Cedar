@@ -51,40 +51,28 @@ reRollBut.addEventListener('click', (e)=>{
     
     let reRollChoice = prompt("Which die do you want to re-roll");
     
-    reRollChoice.split(",").forEach(function(diceNum){
-        rollDice(diceNum);
-    });
-
-    function rollDice(diceNum){
-        if (diceNum === "one"){
-            diceSel[one].src = getRandomRoll()
+    reRollChoice.split(",").forEach(function(dice) {
+        let trimmedDice = dice.trim();
+      
+        if (trimmedDice == "one") { 
+          one.src = getRandomRoll()
         }
-        else if (diceNum === "two"){
-            diceSel[two].src = getRandomRoll()
+      
+        if (trimmedDice == "two") {
+          two.src = getRandomRoll()
         }
-    }
-    function rollDice(diceNum){
-        if (diceNum === "one"){
-            one.src = getRandomRoll();
+      
+        if (trimmedDice == "three") {
+          three.src = getRandomRoll()
         }
-        else if (diceNum === "two"){
-            two.src = getRandomRoll();
+      
+        if (trimmedDice == "four") {
+          four.src = getRandomRoll()
         }
-        else if (diceNum === "three"){
-            three.src = getRandomRoll();
+        if (trimmedDice == "five"){
+            five.src = getRandomRoll()
         }
-        else if (diceNum === "four"){
-            four.src = getRandomRoll();
-        }
-        else if (diceNum === "five"){
-            five.src = getRandomRoll();
-        }
-        else {
-            alert("Dice not selected")
-        }
-    };
-    
-
+      });
     if (timesRolled >= 3){
         alert("Out of re-rolls, must end turn");
         window.stop();
