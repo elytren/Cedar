@@ -1,6 +1,7 @@
 //numbers inputed into upper section should auto populate a total for upper total score, auto puts number in lower upper section
 //lower section auto populate total score
 //grand total score calculates lower and upper combined 
+
 let compassInput = document.getElementById('compasses');
 let flashlightInput = document.getElementById('flashlights');
 let hatchetInput = document.getElementById('hatchets');

@@ -26,6 +26,8 @@ let endTurnBut = document.createElement("button");
     endTurnBut.id = "endTurnBut";
     endTurnBut.innerText = "End Turn";
 
+// const diceSel = {one, two, three, four, five}
+
 function getRandomRoll(){
     return diceface[Math.floor(Math.random()* diceface.length)]
 }
@@ -46,67 +48,48 @@ rollbutton.addEventListener('click', (e)=> {
 reRollBut.addEventListener('click', (e)=>{
     timesRolled += 1;
     console.log(timesRolled)
-    let reRollChoice = prompt("Which die do you want to re-roll", "one, two, three ...");
     
+    let reRollChoice = prompt("Which die do you want to re-roll");
+    
+    reRollChoice.split(",").forEach(function(diceNum){
+        rollDice(diceNum);
+    });
+
+    function rollDice(diceNum){
+        if (diceNum === "one"){
+            diceSel[one].src = getRandomRoll()
+        }
+        else if (diceNum === "two"){
+            diceSel[two].src = getRandomRoll()
+        }
+    }
+    function rollDice(diceNum){
+        if (diceNum === "one"){
+            one.src = getRandomRoll();
+        }
+        else if (diceNum === "two"){
+            two.src = getRandomRoll();
+        }
+        else if (diceNum === "three"){
+            three.src = getRandomRoll();
+        }
+        else if (diceNum === "four"){
+            four.src = getRandomRoll();
+        }
+        else if (diceNum === "five"){
+            five.src = getRandomRoll();
+        }
+        else {
+            alert("Dice not selected")
+        }
+    };
+    
+
     if (timesRolled >= 3){
         alert("Out of re-rolls, must end turn");
         window.stop();
     }
-    
-    // reRollChoice.split(",").forEach(function(diceNum){
-    //     rollDice(diceNum);
-    // });
-    // function rollDice(diceNum){
-        if (reRollChoice === "one"){
-        one.src = getRandomRoll();
-        }
-        else if(reRollChoice === "one, two"){
-            one.src = getRandomRoll();
-            two.src = getRandomRoll();
-        }
-        else if(reRollChoice === "one, two, three"){
-            one.src = getRandomRoll();
-            two.src = getRandomRoll();
-            three.src = getRandomRoll(); 
-        }
-        else if(reRollChoice === "one, two, three, four"){
-            one.src = getRandomRoll();
-            two.src = getRandomRoll();
-            three.src = getRandomRoll(); 
-            four.src = getRandomRoll();
-        }
-        else if (reRollChoice === "two"){
-        two.src = getRandomRoll();
-        }
-        else if (reRollChoice === "two, three"){
-            two.src = getRandomRoll();
-            three.src = getRandomRoll(); 
-        }
-        else if (reRollChoice === "two, three, four"){
-            two.src = getRandomRoll();
-            three.src = getRandomRoll(); 
-            four.src = getRandomRoll();
-        }
-        else if (reRollChoice === "three"){
-        three.src = getRandomRoll();
-        }
-        else if (reRollChoice === "four"){
-        four.src = getRandomRoll();
-        }
-        else if (reRollChoice === "five"){
-        five.src = getRandomRoll();
-        }
-        else if(reRollChoice === "all"){
-            one.src = getRandomRoll();
-            two.src = getRandomRoll();
-            three.src = getRandomRoll(); 
-            four.src = getRandomRoll();
-            five.src = getRandomRoll();
-        }
-        else {
-        alert("Did not select one of the die")
-        };
-    //};
+   
 });
 
 
@@ -118,10 +101,9 @@ endTurnBut.addEventListener('click', (e)=>{
     };
     endTurnBut.remove();
     reRollBut.replaceWith(rollbutton);
+    
    
     console.log(timesRolled)
     console.log(turnNum)
 
 });
-
-
