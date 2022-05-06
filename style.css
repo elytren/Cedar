@@ -1,23 +1,62 @@
 html {
-    /* background-color: ; */
+    background-color: url("/images/forest\ background.jpeg");
 }
-
-h1 {
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header {
     text-align: center;
     font-family: 'Cabin Sketch', cursive;
-    font-size: 65px;
+    font-size: 40px;
     color: black;
-    
+}
+h1{
+    margin:auto;
+    padding: 0;
+}
+main {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
 }
 
-table {
-    /* background-color: #4d3e39; */
+#scorecard {
+    grid-area: 1 / 1 / 5 / 3;
+    margin: 0px 75px 0px 100px;
     border-radius: 8px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: wrap;
+}
+
+#dice {
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+#roll {
+    grid-area: 3 / 3 / 4 / 5;
+    border-radius: 25px;
+    width: 200px;
+    height: 100px;
+}
+
+#reRoll {
+    grid-area: 3 / 3 / 4 / 4;
+    border-radius: 25px;
+    width: 250px;
+    height: 100px;
+}
+
+#endTurnBut {
+    grid-area: 3 / 4 / 4 / 5;
+    border-radius: 25px;
+    width: 250px;
+    height: 100px;
 }
 
 th, td, input {
-    /* background-color: palegoldenrod; */
+    background-color: white;
     
 }
 
@@ -32,40 +71,14 @@ input {
     
 }
 
-main {
-    display: inline-grid;
-    justify-content: space-around;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
 img {
-    width: 75px;
-    height: 75px;
-    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
     border-radius: 25px;
 } 
 
-#scorecard {
-    grid-area: 1 / 1 / 5 / 3;
-}
 
-#dice {
-    grid-area: 2 / 4 / 3 / 6;
-}
-
-#roll {
-    grid-area: 3 / 4 / 4 / 6;
-    border-radius: 25px;
-}
-
-#reRoll {
-    grid-area: 3 / 4 / 4 / 5;
-}
-
-#endTurnBut {
-    grid-area: 3 / 5 / 4 / 6;
-}
 
 
 
