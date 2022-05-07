@@ -23,57 +23,69 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
 }
+#scorecard {
+    grid-area: 1 / 1 / 5 / 3;
+    margin: 30px 75px 0px 100px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: palegoldenrod;
+    border: .5px solid #70bdfa;
+}
 th, td {
     border: .5px solid #70bdfa;
     text-align: center;
 }
-
-#scorecard {
-    grid-area: 1 / 1 / 5 / 3;
-    margin: 0px 75px 0px 100px;
-    border-radius: 8px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: white;
-    border: .5px solid #70bdfa;
+input {
+    border: none;
+    background-color: palegoldenrod;
+    
 }
-
 #dice {
     grid-area: 2 / 3 / 3 / 5;
 }
-
-#roll {
-    grid-area: 3 / 3 / 4 / 5;
-    border-radius: 25px;
-    width: 200px;
-    height: 100px;
-}
-
-#reRoll {
-    grid-area: 3 / 3 / 4 / 4;
-    border-radius: 25px;
-    width: 250px;
-    height: 100px;
-}
-
-#endTurnBut {
-    grid-area: 3 / 4 / 4 / 5;
-    border-radius: 25px;
-    width: 250px;
-    height: 100px;
-}
-
-input {
-    border: none;
-    /* cursor: url('images/pencil-cursor.png'); */
-    
-}
-
 img {
     width: 100px;
     height: 100px;
     margin: 20px;
     border-radius: 25px;
+    border: none;
 } 
+#roll {
+    grid-area: 3 / 3 / 4 / 5;
+    border-radius: 25px;
+    width: 200px;
+    height: 100px;
+    background-color: #ccae88;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+#reRoll {
+    grid-area: 3 / 3 / 4 / 4;
+    border-radius: 25px;
+    width: 250px;
+    height: 100px;
+    background-color: #b39473;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+#endTurnBut {
+    grid-area: 3 / 4 / 4 / 5;
+    border-radius: 25px;
+    width: 250px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #634028;
+}
+
+
+
+
+
+
 
 
 
