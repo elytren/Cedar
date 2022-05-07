@@ -22,6 +22,7 @@ This project is written in HTML, CSS, and JavaScript
 I had a hard time figuring out the re-roll function for the dice, but was able to finally figure it out with help from various instructors and peers. I would like to have had the prompt and alert screens be styled, an option for the user to input their name onto the scorecard before the game starts, and a rolling dice animation. Will come back and update this project in the future. 
 
 #User Stories 
+
 MVP Goals
 
 - As a player, I want to be able to see the game card on the screen
