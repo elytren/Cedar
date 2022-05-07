@@ -1,10 +1,10 @@
 let diceface = [
-    "/images/diceface/1.png",
-    "/images/diceface/2.png",
-    "/images/diceface/3.png",
-    "/images/diceface/4.png", 
-    "/images/diceface/5.png",
-    "/images/diceface/6.png"
+    "./images/diceface/1.png",
+    "./images/diceface/2.png",
+    "./images/diceface/3.png",
+    "./images/diceface/4.png", 
+    ".images/diceface/5.png",
+    "./images/diceface/6.png"
 ];
 
 let one = document.getElementById('die1');
