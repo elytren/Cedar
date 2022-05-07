@@ -1,5 +1,5 @@
 html {
-    background: url("/images/cedar-branch.jpeg");
+    background: url("./images/cedar-branch.jpeg");
     background-size: cover;
 }
 body{
