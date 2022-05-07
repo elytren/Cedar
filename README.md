@@ -23,6 +23,7 @@ I had a hard time figuring out the re-roll function for the dice, but was able t
 
 #User Stories 
 MVP Goals
+
 - As a player, I want to be able to see the game card on the screen
   - I want the score directions to be easy to understand
   - I want to be able to input my roll scores in the correct spaces
@@ -33,7 +34,9 @@ MVP Goals
 - As a player I want the rolls to be limited to three a turn
 - As a player I want the game to end after 13 turns 
 - As a player I want the design of the screen to be inviting 
+
 Stretch Goals
+
 - As a player I want the dice face to be uniquely designed 
 - As a player I want a navigation bar at the top of the page that allows me to choose a background 
 - As a player I want to be able to input my name so it appears on the scorecard
