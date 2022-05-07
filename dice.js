@@ -36,7 +36,6 @@ rollbutton.addEventListener('click', (e)=> {
     four.src = getRandomRoll();
     five.src = getRandomRoll();
     timesRolled += 1;
-    console.log(timesRolled)
     rollbutton.replaceWith((reRollBut), (endTurnBut));
 });
 
